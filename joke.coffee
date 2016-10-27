@@ -24,7 +24,7 @@ makeJoke = (msg) ->
             randomIdx = Math.floor(Math.random() * rows)
             content = jsonBody?.result[randomIdx]?.content
             replyJoke = content.replace /(\<br\/\>\<br\/\>\s*)/g, "\n"
-            replyJoke = replyJoke.replace "&nbsp;" "  "
+            replyJoke = replyJoke.replace "&nbsp;", "  "
             msg.send "#{replyJoke}"
           else
             msg.send jsonBody?.reason

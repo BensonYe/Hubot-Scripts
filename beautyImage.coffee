@@ -18,10 +18,8 @@ module.exports = (robot) ->
     _getCalvinImage msg
 
 _getCalvinImage = (msg) ->
-  imgDir = "F\:/BeautyImageDir/"
-  isExist = fs.existsSync imgDir
-  #console.log "isExist=#{isExist}"
-  if isExist
+  imgDir = "../BeautyImage/"
+  if fs.existsSync imgDir
     fileList = fs.readdirSync imgDir
     index = Math.floor(Math.random() * fileList.length)
     msg.emote imgDir + fileList[index]

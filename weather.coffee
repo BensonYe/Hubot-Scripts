@@ -1,5 +1,5 @@
 # Description:
-#   Allows Hubot to interact with http://apis.juhe.cn/idcard/index to search information of ID card
+#   Allows Hubot to interact with http://op.juhe.cn/onebox/weather/query to search weather
 #
 # Commands:
 #   hubot weather|天气 城市 - search weather|天气预报
